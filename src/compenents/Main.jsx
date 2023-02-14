@@ -7,6 +7,8 @@ import { BiPoll } from "react-icons/bi";
 import { TbCalendarTime } from "react-icons/tb";
 import { SlLocationPin } from "react-icons/sl";
 import Tweet from "./Tweet";
+import { useId } from "react";
+import { v4 as uuid } from "uuid";
 
 const Main = ({ tweets, setTweets, input, setInput }) => {
   const handleChange = (e) => {
@@ -15,9 +17,11 @@ const Main = ({ tweets, setTweets, input, setInput }) => {
     }
   };
   const handleClick = (e) => {
-    setTweets((prev) => [input, ...prev]);
+    setTweets((prev) => [{ id: uuid(), message: input }, ...prev]);
     setInput("");
   };
+  const id = uuid();
+  console.log(id);
 
   return (
     <div>

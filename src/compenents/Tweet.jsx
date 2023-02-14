@@ -8,6 +8,7 @@ import { IoStatsChart, IoCodeSlashSharp } from "react-icons/io5";
 import { FiShare } from "react-icons/fi";
 import { RiDeleteBin6Line, RiFileList2Line } from "react-icons/ri";
 import { VscPinned } from "react-icons/vsc";
+import { useEffect } from "react";
 
 const Tweet = ({ tw, i, setTweets, tweets }) => {
   const [open, setOpen] = useState("none");
@@ -17,11 +18,14 @@ const Tweet = ({ tw, i, setTweets, tweets }) => {
   };
 
   const handleDelete = (e) => {
-    const tweetdelete = tweets.filter((tw, i) => e !== i);
+    const tweetdelete = tweets.filter((t) => t.id !== e);
     setTweets(tweetdelete);
+    setOpen("none");
+    console.log(open);
   };
+
   return (
-    <div key={i} id="i" className="tweet">
+    <div className="tweet">
       <div className="twtphoto">
         <img className="photot" src="images/profile.png" alt="" />
       </div>
@@ -33,14 +37,14 @@ const Tweet = ({ tw, i, setTweets, tweets }) => {
             <span className="id">@EnginYI73466332</span>
           </div>
 
-          <div onClick={() => handleOpen()} className="twtdelete">
+          <div className="twtdelete">
             <div
               style={{
                 display: open,
               }}
               className="deleteabsolute"
             >
-              <div className="topabsolute" onClick={() => handleDelete(i)}>
+              <div className="topabsolute" onClick={() => handleDelete(tw.id)}>
                 <span className="reddelete">
                   <RiDeleteBin6Line />
                 </span>
@@ -79,12 +83,12 @@ const Tweet = ({ tw, i, setTweets, tweets }) => {
                 <span className="absolutespan ">View Tweet analytics</span>
               </div>
             </div>
-            <span className="threetw">
+            <span className="threetw" onClick={() => handleOpen()}>
               <BsThreeDots />
             </span>
           </div>
         </div>
-        <div className="softtweet">{tw}</div>
+        <div className="softtweet">{tw.message}</div>
         <div className="like">
           <div className="likeicons">
             <FaRegComment />
