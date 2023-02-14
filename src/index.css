@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.App {
+  display: flex;
+  margin-left: 9%;
+  margin-right: 9%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.leftside {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 21%;
+
+  text-align: center;
+}
+.main {
+  min-width: 600px;
+  border: 1px solid rgb(240, 240, 240);
+  border-bottom: 0px;
+
+  padding-top: 0;
+}
+.rightside {
+  width: 30%;
+}

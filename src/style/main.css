@@ -1,0 +1,339 @@
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.85);
+  padding-top: 0;
+  margin-top: 0;
+  height: 107px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.top {
+  font-size: 13.5px;
+  padding-top: 15px;
+  text-align: left;
+  padding-left: 15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.bot {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  font-size: 13px;
+  cursor: pointer;
+  width: 100%;
+}
+.botleft {
+  width: 50%;
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.botright {
+  width: 50%;
+  position: relative;
+  display: flex;
+
+  text-align: center;
+  justify-content: center;
+}
+.botleft:hover {
+  background-color: rgb(232, 232, 232);
+}
+.botright:hover {
+  background-color: rgb(232, 232, 232);
+}
+.stick {
+  position: absolute;
+  bottom: 0;
+  min-width: 56px;
+
+  border-radius: 50px;
+  background-color: rgb(29, 155, 240);
+  height: 4px;
+  align-self: center;
+}
+.conteiner {
+  height: 120px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+.content {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+.photo {
+  width: 12%;
+}
+.photo img {
+  margin-left: 15px;
+  margin-top: 7px;
+
+  width: 50px;
+  border-radius: 50px;
+}
+.write {
+  width: 87%;
+}
+.write input {
+  font-size: 20px;
+  width: 98%;
+  height: 75px;
+  outline-style: none;
+
+  border: 0;
+}
+.send {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sendicons {
+  display: flex;
+  margin-right: 180px;
+}
+.sendicons div {
+  font-size: 17px;
+  font-weight: 700;
+
+  color: #00acee;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  padding: 6px;
+}
+.sendicons div:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+}
+.out {
+  margin-right: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #00acee;
+  border-radius: 20px;
+}
+.in {
+  display: inline-flex;
+
+  border-radius: 20px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+}
+.btn-send {
+  float: right;
+  margin-right: 15px;
+
+  width: 80px;
+  height: 35px;
+  border-radius: 20px;
+  border: 0;
+  background-color: #00acee;
+  opacity: 0.5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.tweet {
+  cursor: pointer;
+  margin-top: 0px;
+  border: 1px solid rgb(240, 240, 240);
+  max-width: 100%;
+  min-height: 100px;
+
+  display: flex;
+}
+.tweet:hover {
+  background-color: rgb(245, 245, 245);
+}
+.threetw {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.photot {
+  width: 48px;
+  border-radius: 50px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.twtcontent {
+  width: 100%;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.contentheader {
+  display: flex;
+  justify-content: space-between;
+}
+.nameid2 {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+.name {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+.name:hover {
+  text-decoration: underline;
+}
+.id {
+  font-size: 14px;
+  margin-left: 2px;
+}
+.threetw {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.twtdelete {
+  display: flex;
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  padding: 5px;
+}
+.twtdelete .absolutespan {
+  color: black;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/**.twtdelete:hover .threetw {
+  border-radius: 20px;
+  color: rgb(0, 0, 255);
+  opacity: 0.5;
+  background-color: rgb(222, 222, 255);
+}**/
+
+.twtdelete:hover .tweet {
+  background-color: white;
+}
+
+.deleteabsolute {
+  background-color: white;
+  border-radius: 15px;
+  z-index: 1;
+  font-size: 13px;
+  width: max-content;
+
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.deleteabsolute div {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  cursor: pointer;
+}
+.deleteabsolute div:hover {
+  background-color: rgb(247, 247, 247);
+}
+.topabsolute {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.botabsolute {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.reddelete {
+  font-weight: 700;
+  font-size: 15px;
+  color: rgb(244, 33, 46);
+}
+.reddelete2 {
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 12px;
+  color: rgb(244, 33, 46);
+}
+.absolutespan {
+  font-size: 15px;
+  margin-left: 12px;
+}
+.absoluteicons {
+  color: black;
+  font-size: 17px;
+}
+
+.softtweet {
+  font-weight: lighter;
+}
+.like {
+  color: rgb(93, 93, 93);
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.likeicons {
+  width: 35px;
+  height: 35px;
+  padding: 7px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.retweet {
+  width: 35px;
+  height: 35px;
+  padding: 7px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.retweet:hover {
+  color: rgb(0, 186, 124);
+  background-color: rgba(0, 186, 124, 0.1);
+}
+.heart {
+  width: 35px;
+  height: 35px;
+  padding: 7px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heart:hover {
+  color: rgb(249, 24, 128);
+  background-color: rgba(249, 24, 128, 0.1);
+}
+.like .likeicons:hover {
+  color: rgb(29, 155, 240);
+  background-color: rgba(29, 155, 240, 0.1);
+}

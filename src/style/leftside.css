@@ -1,0 +1,138 @@
+.icons {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.same {
+  height: 58px;
+  display: flex;
+  color: rgb(47, 47, 47);
+  align-items: center;
+  border-radius: 70px;
+  width: max-content;
+  padding-left: 13px;
+  padding-right: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.same:hover {
+  background-color: rgb(238, 238, 238);
+}
+.logo {
+  color: #00acee;
+  height: 55px;
+  width: 55px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 1px;
+  font-size: 29px;
+
+  border-radius: 60px;
+  width: max-content;
+
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.logo:hover {
+  background-color: rgb(244, 244, 255);
+}
+
+a {
+  color: rgb(47, 47, 47);
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 500;
+  margin-left: 15px;
+}
+.btn-twt {
+  width: 85%;
+  height: 50px;
+  background-color: #00acee;
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 0;
+  margin-right: 35px;
+  margin-top: 10px;
+}
+.logout {
+  width: 260px;
+  position: absolute;
+  font-size: 20px;
+  background-color: white;
+  border: solid 0px black;
+
+  height: 100px;
+  box-shadow: 0.5px;
+
+  border-radius: 10px;
+}
+.logout div {
+  text-align: left;
+  align-items: center;
+  height: 50px;
+}
+.logout span {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+.account {
+  margin-right: 10px;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-top: 100px;
+  width: 95%;
+  border-radius: 30px;
+}
+.account:hover {
+  background-color: rgb(233, 233, 233);
+}
+.menu-photo img {
+  margin-top: 7px;
+  margin-left: 12px;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.nameid {
+  margin-left: 0px;
+  margin-right: 20px;
+  white-space: inherit;
+  font: inherit;
+  color: inherit;
+
+  font-size: 15px;
+  width: 50%;
+}
+.namea {
+  font-family: inherit;
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+.ida {
+  font-family: inherit;
+  margin-top: 3px;
+  margin-left: 6px;
+  color: rgb(86, 86, 86);
+  font-size: 14px;
+  font-weight: 400;
+}
+.threea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.threea span {
+  color: black;
+  font-size: 17px;
+}
